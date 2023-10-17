@@ -1,4 +1,7 @@
+import './App.css'
+
 // this is an arrow function
+
 
 const loadCountryAPI = () =>{
 
@@ -25,16 +28,14 @@ console.log(country)
 return(
  
   `
-    <div class="container d-flex flex-column align-items-center bg-#23404C">
-    
-    <div class="card text-center">
+     <div class="country-div">
 
-      <div class="card-header text-white bg-black">
+      
         <h2>${country.name.common}</h2>
-      </div>
+     
 
-      <div class="card-body" style="background: linear-gradient(to right,#D0C09D,#4E5D59); color: white;">
-        <img src="${country.flags.png}">
+      <hr>
+        <img class="img" src="${country.flags.png}">
         <h4>Capital: ${country.capital}</h4>
         <h4>Regoin: ${country.region}</h4>
         <h4>Country Code: ${country.cca3}</h4>
@@ -48,3 +49,5 @@ return(
 
   // call the funtion to get output in console
   loadCountryAPI()
+
+  export default App;
