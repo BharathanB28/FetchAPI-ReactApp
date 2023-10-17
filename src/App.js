@@ -1,4 +1,4 @@
-import './App.css'
+
 
 // this is an arrow function
 
@@ -50,4 +50,4 @@ return(
   // call the funtion to get output in console
   loadCountryAPI()
 
-  export default App;
+  
